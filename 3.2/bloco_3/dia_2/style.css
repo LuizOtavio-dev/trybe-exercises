@@ -1,0 +1,39 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+
+p {
+  font-weight: 600px;
+  font-size: 3em;
+}
+
+ul {
+  background-color: orange;
+  text-align: center;
+}
+
+.colors {
+  background-color: gainsboro;
+}
+
+body {
+  font-size: 16px;
+}
+
+#color1 {
+  background-color: red;
+  font-style: italic;
+}
+
+#color2 {
+  background-color: white;
+  line-height: 50px;
+}
+
+#color3 {
+  background-color: black;
+  color: white;
+  text-decoration: line-through;
+}
