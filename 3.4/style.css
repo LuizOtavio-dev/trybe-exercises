@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color:floralwhite;
+}
+
+header {
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 12px;
+}
+
+nav {
+  background-color: cornflowerblue;
+}
+
+nav a {
+ color: white;
+ display: inline-block;
+ padding: 10px;
+ font-size: 12px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
