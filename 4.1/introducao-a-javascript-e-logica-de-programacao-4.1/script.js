@@ -37,3 +37,15 @@ if (number1 > number2 && number1 > number3) {
 } else {
   console.log('O maior número entre os três é: ' + number3);
 }
+
+//Exercício 4
+
+let positiveOrNegative = -1;
+
+if (positiveOrNegative > 0) {
+  console.log('positive');
+} else if (positiveOrNegative < 0) {
+  console.log('negative');
+} else {
+  console.log("Zero");
+}
