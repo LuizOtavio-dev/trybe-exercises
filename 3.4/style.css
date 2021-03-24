@@ -35,3 +35,60 @@ nav a {
 nav a:hover {
   font-weight: bold;
 }
+
+img {
+  width: 400px;
+}
+
+#first-image {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#fatos {
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#fatos-paragrafo {
+  width: 400px;
+  height: 300px;
+  margin-left: 50px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-align: justify;
+  overflow:scroll;
+  display: inline-block;
+}
+
+#visao {
+  background-color: cornflowerblue;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+#title-vision {
+  padding-top: 20px;
+  color: white;
+}
+
+#second-image {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+
+#vision-paragrafo {
+  width: 400px;
+  height: 300px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-align: justify;
+  overflow: scroll;
+  color: white;
+}
