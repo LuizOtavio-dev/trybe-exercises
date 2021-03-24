@@ -45,13 +45,10 @@ img {
   padding-bottom: 20px;
 }
 
-#fatos {
-  padding-top: 20px;
-}
-
 h2 {
-  text-align: center;
+  padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 #fatos-paragrafo {
@@ -73,14 +70,13 @@ h2 {
 }
 
 #title-vision {
-  padding-top: 20px;
   color: white;
 }
 
 #second-image {
   float: right;
   margin-right: 20px;
-  margin-bottom: 100px;
+  padding-top: 15px;
 }
 
 #vision-paragrafo {
@@ -91,4 +87,79 @@ h2 {
   text-align: justify;
   overflow: scroll;
   color: white;
+}
+
+#classification-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#third-image {
+  /* padding-left: 0px;
+  padding-bottom: 20px; */
+  border-radius: 60%;
+  margin-left: 50px;
+}
+
+#cassification-paragrafy {
+  float: right;
+  background-color: cornflowerblue;
+  border: 10px solid black;
+  margin: 40px 100px;
+  color: whitesmoke;
+  padding: 10px 10px;
+}
+
+#fonts {
+  background-color: cornflowerblue;
+  margin-top: 60px;
+}
+
+#fonts-paragrafy {
+  color: whitesmoke;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.fonts-links {
+  color: whitesmoke;
+  margin-left: 30px;
+}
+
+.fonts-links:hover {
+  font-weight: bold;
+}
+
+#aside {
+  padding: 20px;
+}
+
+#aside-paragrafy {
+  font-weight: bold;
+}
+
+#saiba-mais {
+  background-color: turquoise;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+#saiba-mais:hover {
+  font-weight: bold;
+}
+
+#saiba-mais:active {
+  font-weight: 100;
+}
+
+#footer {
+  background-color: cornflowerblue;
+  padding: 100px 20px 20px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 1px solid black;
 }
