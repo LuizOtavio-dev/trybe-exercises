@@ -49,3 +49,20 @@ if (positiveOrNegative > 0) {
 } else {
   console.log("Zero");
 }
+
+//exercício 5
+
+let angle1 = 40;
+let angle2 = 70;
+let angle3 = 70;
+
+let sumTriangle = angle1 + angle2 + angle3;
+let triangleValid = angle1 > 0 && angle2 > 0 && angle3 > 0;
+
+if (sumTriangle === 180) {
+  console.log('true');
+} else if (triangleValid === false) {
+  console.log('Erro! Triângulo invalido.');  
+} else {
+  console.log('false');
+}
