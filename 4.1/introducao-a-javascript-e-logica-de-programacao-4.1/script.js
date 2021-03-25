@@ -100,3 +100,23 @@ switch (chessPiece.toLowerCase()) {
     console.log('Erro! Peça invalida.');
     break;
 }
+
+//Exercício 7
+
+let note = 110;
+
+if (note >= 90 && note < 100) {
+  console.log('Nota A');
+} else if (note >= 80 && note < 90) {
+  console.log('Nota B');
+} else if (note >= 70 && note < 80) {
+  console.log('Nota C');
+} else if (note >= 60 && note < 70) {
+  console.log('Nota D');
+} else if (note >= 50 && note < 60) {
+  console.log('Nota E');
+} else if (note >= 0 && note < 50) {
+  console.log('Nota F');
+} else if (note < 0 || note > 100) {
+  console.log('Erro! Nota invalida.');
+}
