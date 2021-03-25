@@ -66,3 +66,37 @@ if (sumTriangle === 180) {
 } else {
   console.log('false');
 }
+
+//Exercício 6
+
+let chessPiece = 'Rei';
+
+switch (chessPiece.toLowerCase()) {
+  case 'rei':
+    console.log('REI -> Diagonal, vertical e horizontal, apenas uma casa');
+    break;
+
+  case 'rainha':
+    console.log('RAINHA -> Diagonal, vertical e horizontal');
+    break;
+
+  case 'bispo':
+    console.log('BISPO -> Diagonal');
+    break;
+
+  case 'cavalo':
+    console.log('CAVALO -> Movimento em L');
+    break;
+
+  case 'torre':
+    console.log('TORRE -> Vertical e horizontal');
+    break;
+
+  case 'peao':
+    console.log('PEÃO -> Vertical, apenas uma casa (exeto a primeira jogada, pode andar duas casas)');
+    break;
+
+  default:
+    console.log('Erro! Peça invalida.');
+    break;
+}
