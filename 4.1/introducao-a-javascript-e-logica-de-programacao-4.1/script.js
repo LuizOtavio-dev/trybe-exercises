@@ -120,3 +120,15 @@ if (note >= 90 && note < 100) {
 } else if (note < 0 || note > 100) {
   console.log('Erro! Nota invalida.');
 }
+
+//Exercício 8
+
+let firstNumber = 10;
+let secondNumber = 20;
+let thirdNumber = 30;
+
+if (firstNumber % 2 === 0 && secondNumber % 2 === 0 && thirdNumber % 2 === 0) {
+  console.log('false');
+} else {
+  console.log('true');
+}
