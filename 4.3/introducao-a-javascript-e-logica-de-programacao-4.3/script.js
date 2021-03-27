@@ -1,3 +1,5 @@
+//Exercício 1
+
 let number = 5;
 let asteris = []
 
@@ -7,4 +9,16 @@ for (let index = 0; index < number; index += 1) {
   }
   console.log(asteris);
 }
+
+//2
+
+number = 5;
+asteris = []
+
+for (let index = 0; index < number; index += 1) {
+  asteris[index] = '*';
+  console.log(asteris);
+}
+
+//3
 
