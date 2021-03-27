@@ -22,3 +22,17 @@ for (let index = 0; index < number; index += 1) {
 
 //3
 
+number = 5;
+asteris = []
+
+for (let index = 0; index < number; index += 1) {
+  asteris[index] = ' ';    
+}
+
+for (let index = 0; index < number; index += 1) {
+  asteris.shift();
+  asteris.push('*')
+  console.log(asteris);
+}
+
+//4
