@@ -1,3 +1,5 @@
+//Parte 1
+
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
@@ -5,3 +7,7 @@ let info = {
 };
 
 console.log('Bem-vinda, ' + info.personagem);
+
+info.recorrente = 'Sim';
+
+console.log(info);
