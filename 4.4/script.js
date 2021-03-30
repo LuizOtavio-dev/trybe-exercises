@@ -70,3 +70,23 @@ function indexLagerNumber(array) {
 }
 
 console.log(indexLagerNumber([2, 3, 6, 7, 10, 1]));
+
+function indexSmallerNumber(array) {
+  let smallerNumber = null;
+  let indexNumber = null;
+  for (let index = 0; index < array.length; index += 1) {
+    for (let counter = 0; counter < array.length; counter += 1) {
+      if (array[index] < array[counter]) {
+        smallerNumber = array[index]
+      }
+    }
+  }
+  for (let index = 0; index < array.length; index += 1) {
+    if (smallerNumber === array[index]) {
+      indexNumber = index;
+    }
+  }
+  return indexNumber;
+}
+
+console.log(indexSmallerNumber([2, 4, 6, 7, 10, 0, -3]));
