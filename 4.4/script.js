@@ -90,3 +90,15 @@ function indexSmallerNumber(array) {
 }
 
 console.log(indexSmallerNumber([2, 4, 6, 7, 10, 0, -3]));
+
+function nameLager(array) {
+  let name = array[0];
+  for (let index = 1; index < array.length; index += 1) {
+    if (array[index].length > name.length) {
+      name = array[index]
+    }
+  }
+  return name;
+}
+
+console.log(nameLager(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
