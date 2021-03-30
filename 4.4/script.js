@@ -117,3 +117,14 @@ function summation(number) {
 }
 
 console.log(summation(5));
+
+function checkWord(string1, string2) {
+  let word1 = string1[string1.length -2] + string1[string1.length - 1];
+  let word2 = string2[0] + string2[1];
+  if (word1 === word2) {
+    return true;
+  }
+  return false;
+}
+
+console.log(checkWord('word', 'ending'));
