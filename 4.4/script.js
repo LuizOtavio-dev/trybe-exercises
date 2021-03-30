@@ -50,3 +50,23 @@ function palindromo(string) {
 }
 
 console.log(palindromo('arara'));
+
+function indexLagerNumber(array) {
+  let lagerNumber = 0;
+  let indexNumber = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    for (let counter = 0; counter < array.length; counter += 1) {
+      if (array[index] > array[counter]) {
+        lagerNumber = array[index]
+      }
+    }
+  }
+  for (let index = 0; index < array.length; index += 1) {
+    if (lagerNumber === array[index]) {
+      indexNumber = index;
+    }
+  }
+  return indexNumber;
+}
+
+console.log(indexLagerNumber([2, 3, 6, 7, 10, 1]));
