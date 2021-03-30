@@ -37,9 +37,8 @@ for (const key in info) {
 
 //Parte 2 Funções
 
-let checksWord = '';
-
 function palindromo(string) {
+  let checksWord = '';
   for (let index = string.length - 1; index >= 0; index -= 1) {
     checksWord += string[index];
   }
@@ -51,7 +50,7 @@ function palindromo(string) {
 
 console.log(palindromo('arara'));
 
-function indexLagerNumber(array) {
+function indexLagerNumber(arrayNumbers) {
   let lagerNumber = 0;
   let indexNumber = 0;
   for (let index = 0; index < array.length; index += 1) {
@@ -71,7 +70,7 @@ function indexLagerNumber(array) {
 
 console.log(indexLagerNumber([2, 3, 6, 7, 10, 1]));
 
-function indexSmallerNumber(array) {
+function indexSmallerNumber(arrayNumbers) {
   let smallerNumber = null;
   let indexNumber = null;
   for (let index = 0; index < array.length; index += 1) {
@@ -91,7 +90,7 @@ function indexSmallerNumber(array) {
 
 console.log(indexSmallerNumber([2, 4, 6, 7, 10, 0, -3]));
 
-function nameLager(array) {
+function nameLager(arrayStrings) {
   let name = array[0];
   for (let index = 1; index < array.length; index += 1) {
     if (array[index].length > name.length) {
@@ -102,3 +101,19 @@ function nameLager(array) {
 }
 
 console.log(nameLager(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+function repeatedNumber(array) {
+  
+}
+
+function summation(number) {
+  let sumNumber = number;
+  let sum = 0;
+  
+  for (let index = 1; index <= number; index += 1) {
+    sum += index;
+  }
+  return sum;
+}
+
+console.log(summation(5));
