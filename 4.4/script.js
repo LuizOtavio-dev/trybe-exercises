@@ -146,4 +146,3 @@ function checkWord(string1, string2) {
 }
 
 console.log(checkWord('word', 'ending'));
-
