@@ -102,9 +102,27 @@ function nameLager(arrayStrings) {
 
 console.log(nameLager(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
-function repeatedNumber(array) {
-  
+function repeatedNumber(arrayNumbers) {
+  let repeated = 0;
+  let counterNumber = 0;
+  let indexNumber = 0;
+
+  for (let index = 0; index < arrayNumbers.length; index += 1) {
+    for (let counter = 0; counter < arrayNumbers.length; counter += 1) {
+      if (arrayNumbers[index] === arrayNumbers[counter]) {
+        counterNumber += 1;
+      }
+    }
+    if (counterNumber > repeated) {
+      repeated = counterNumber;
+      indexNumber = index
+    }
+    counterNumber = 0;
+  }
+  return arrayNumbers[indexNumber];
 }
+
+console.log(repeatedNumber([2, 3, 2, 5, 8, 2, 3]));
 
 function summation(number) {
   let sumNumber = number;
@@ -128,3 +146,4 @@ function checkWord(string1, string2) {
 }
 
 console.log(checkWord('word', 'ending'));
+
