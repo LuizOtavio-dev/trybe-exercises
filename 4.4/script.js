@@ -1,4 +1,4 @@
-//Parte 1
+//Parte 1 Objetos e For/In
 
 let info = {
   personagem: 'Margarida',
@@ -34,3 +34,19 @@ for (const key in info) {
     console.log(info[key] + ' e ' + otherInfo[key]);
   }
 }
+
+//Parte 2 Funções
+
+let checksWord = '';
+
+function palindromo(string) {
+  for (let index = string.length - 1; index >= 0; index -= 1) {
+    checksWord += string[index];
+  }
+  if (checksWord  === string) {
+    return true
+  }
+   return false 
+}
+
+console.log(palindromo('arara'));
