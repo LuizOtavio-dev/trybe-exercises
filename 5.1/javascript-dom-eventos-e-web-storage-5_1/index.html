@@ -47,15 +47,24 @@
         return text;
       }
 
-      const background = () => {
+      const backgroundGreen = () => {
         const elementDiv = document.getElementsByClassName('main-content')[0];
         let backColor = elementDiv.style.backgroundColor = 'rgb(76, 164, 109)';
 
         return backColor;
       }
 
+      const backgroundWhite = () => {
+        const elementDiv = document.getElementsByClassName('center-content')[0];
+        let backColor = elementDiv.style.backgroundColor = 'white';
+
+        return backColor;
+      }
+
       textParagraph();
-      background();
+      backgroundGreen();
+      backgroundWhite();
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
