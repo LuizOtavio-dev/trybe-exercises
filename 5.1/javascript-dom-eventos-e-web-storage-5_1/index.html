@@ -40,11 +40,13 @@
     </div>
     <script>
       const textParagraph = () => {
-        const elementParagraph = document.getElementsByTagName('p')[0];
-        let text = elementParagraph.innerHTML = `Daqui a 2 anos eu me vejo trabalhando muito, exercendo a minha 
-        paixão que é a programação e podendo ajudar uma boa empresa.`
+        const elementParagraph = document.querySelectorAll('p')[0];
+        let text = 'Daqui a 2 anos eu me vejo trabalhando muito, exercendo a minha \
+        paixão que é a programação e podendo ajudar uma boa empresa.'
+        let textUpper = text.toUpperCase();
+        let paragraph = elementParagraph.innerHTML = textUpper;
 
-        return text;
+        return paragraph;
       }
 
       const backgroundGreen = () => {
