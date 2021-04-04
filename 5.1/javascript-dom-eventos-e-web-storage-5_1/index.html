@@ -61,9 +61,17 @@
         return backColor;
       }
 
+      const textTitle = () => {
+        const elementTitle = document.getElementsByClassName('title')[0];
+        let text = elementTitle.innerHTML = `Exercício 5.1 - JavaScript.`
+
+        return text;
+      }
+
       textParagraph();
       backgroundGreen();
       backgroundWhite();
+      textTitle();
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
