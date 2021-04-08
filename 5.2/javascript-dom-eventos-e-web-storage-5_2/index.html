@@ -75,7 +75,21 @@
       const createImg = document.createElement('img');
       divSecondSon.appendChild(createImg).className = 'small-image';
       document.querySelector('.small-image').src = 'https://picsum.photos/200';
+      const createUl = document.createElement('ul');
+      const divThirdSon = document.querySelector('.right-content');
+      divThirdSon.appendChild(createUl).className = 'list';
 
+      for (let index = 1; index <= 10; index += 1) {
+        const element = document.querySelector('.list');
+        const elementList = document.createElement('li');
+        element.appendChild(elementList).innerText = index;
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        const element = document.querySelector('.main-content');
+        const elementH3 = document.createElement('h3');
+        element.appendChild(elementH3);
+      }
     </script>
   </body>
 </html>
