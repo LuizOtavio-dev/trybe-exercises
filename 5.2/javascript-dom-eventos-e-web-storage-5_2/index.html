@@ -61,6 +61,14 @@
       document.body.appendChild(createTitle).innerText =  'Exercício 5.2 - JavaScript DOM';
       const createDiv = document.createElement('div');
       document.body.appendChild(createDiv).className = 'main-content';
+      const createDivSon = document.createElement('div');
+      const divDad = document.querySelector('.main-content');
+      divDad.appendChild(createDivSon).className = 'center-content';
+      const createParagrafy = document.createElement('p');
+      const divSon = document.querySelector('.center-content');
+      divSon.appendChild(createParagrafy).innerText = 'Amo programação';
+      const createDivSecondSon = document.createElement('div');
+      divDad.appendChild(createDivSecondSon).className = 'left-content';
     </script>
   </body>
 </html>
