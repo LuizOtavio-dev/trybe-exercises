@@ -82,6 +82,7 @@
       for (let index = 1; index <= 10; index += 1) {
         const element = document.querySelector('.list');
         const elementList = document.createElement('li');
+        elementList.className = 'list-item';
         element.appendChild(elementList).innerText = index;
       }
 
@@ -94,6 +95,19 @@
       document.querySelector('h1').className = 'title';
       const elementSon = document.querySelector('.left-content');
       divDad.removeChild(elementSon);
+      document.querySelector('.right-content').style.marginLeft = '165px';
+      document.querySelector('.center-content').style.backgroundColor = 'green';
+
+      const list = document.querySelector('.list');
+      const listItem = document.querySelectorAll('.list-item');
+
+      for (let index = 0; index < listItem.length; index += 1) {
+        let element = listItem[index];
+
+        if (element.innerText.includes(9) || element.innerText.includes(10)) {
+          list.removeChild(element);
+        }
+      }
     </script>
   </body>
 </html>
