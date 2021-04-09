@@ -88,8 +88,10 @@
       for (let index = 1; index <= 3; index += 1) {
         const element = document.querySelector('.main-content');
         const elementH3 = document.createElement('h3');
-        element.appendChild(elementH3);
+        element.appendChild(elementH3).className = 'description';
       }
+
+      document.querySelector('h1').className = 'title';
     </script>
   </body>
 </html>
