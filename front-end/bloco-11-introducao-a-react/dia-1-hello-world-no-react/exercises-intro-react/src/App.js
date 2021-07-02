@@ -1,8 +1,14 @@
 import './App.css';
 
+// const Task = (value) => {
+//   return (
+//     value.map(task => <li>{task}</li>)
+//   );
+// }
+
 const Task = (value) => {
   return (
-    value.map(task => <li>{task}</li>)
+    <li>{value}</li>
   );
 }
 
@@ -11,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {Task(listTask)}
+        {listTask.map(task => <ul>{Task(task)}</ul>)}
       </header>
     </div>
   );
