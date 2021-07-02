@@ -70,3 +70,15 @@ body {
   flex-wrap: wrap;
   margin: 10px 10px;
 }
+
+.footer {
+  margin-top: 100px;
+  background-color: cornflowerblue;
+  height: 150px;
+  border: 1px whitesmoke solid;
+}
+
+.footer-paragraph {
+  color: whitesmoke;
+  margin-top: 110px;
+}
