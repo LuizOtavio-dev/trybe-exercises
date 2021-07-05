@@ -20,6 +20,9 @@ class Form extends Component {
           <label htmlFor="name"> Nome
             <input id="name" type="text" maxLength="40" value={ name } onChange={ this.handleUpperCase } required />
           </label>
+          <label htmlFor="email"> Email
+            <input id="email" type="text" maxLength="50" required />
+          </label>
       </fieldset>
       </>
     )
