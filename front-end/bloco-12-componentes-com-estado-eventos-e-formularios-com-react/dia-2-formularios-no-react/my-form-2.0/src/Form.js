@@ -23,6 +23,9 @@ class Form extends Component {
           <label htmlFor="email"> Email
             <input id="email" type="text" maxLength="50" required />
           </label>
+          <label htmlFor="cpf"> CPF
+            <input id="cpf" type="text" maxLength="11" required />
+          </label>
       </fieldset>
       </>
     )
