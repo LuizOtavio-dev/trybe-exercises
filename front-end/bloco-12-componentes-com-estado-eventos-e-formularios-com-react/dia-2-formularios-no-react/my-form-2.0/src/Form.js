@@ -8,17 +8,18 @@ class Form extends Component {
       email: '',
       cpf: '',
       address: '',
+      city: ''
     }
   }
 
   handleState = ({ target: { value, name } }) => {
     
-    if ( name === 'name') {
+    if (name === 'name') {
       value = value.toUpperCase()
       this.setState({ name: value })
     }
 
-    if ( name === 'address') {
+    if (name === 'address') {
       value = value.replace(/[^\w\s]/gi, '')
       this.setState({ address: value })
     }
@@ -26,8 +27,16 @@ class Form extends Component {
     this.setState({ [name]: value })
   }
 
+  cityValid = () => {
+    const { city } = this.state;
+    const isvalid = city.match(/^\d/)
+    ? this.setState({ city: '' })
+    : this.setState({ city })
+    return isvalid;
+  }
+
   render() {
-    const { name, address } = this.state;
+    const { name, address, city } = this.state;
     return (
       <>
         <fieldset>
@@ -43,6 +52,9 @@ class Form extends Component {
           <br />
           <label htmlFor="address"> Endereço
             <input id="address" type="text" name="address" maxLength="200" value={ address } onChange={ this.handleState } required />
+          </label>
+          <label htmlFor="city"> Cidade
+            <input id="city" type="text" name="city" maxLength="28" value={ city } onChange={ this.handleState } onBlur={ this.cityValid } required />
           </label>
       </fieldset>
       </>
