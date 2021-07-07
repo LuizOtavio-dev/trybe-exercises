@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-const states = ['Rio de Janeiro', 'Minas Gerais', 'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
+const states = ['Rio Grande do Sul', 'Santa Catarina', 'Paraná', 'Rio de Janeiro', 'Minas Gerais', 'Espírito Santo', 'São Paulo', 'Mato Grosso', 'Bahia', 'Pernambuco', 'Acre'];
 
 class Form extends Component {
   constructor() {
@@ -11,11 +11,12 @@ class Form extends Component {
       cpf: '',
       address: '',
       city: '',
-      states: ''
+      states: '',
+      addressType: ''
     }
   }
 
-  handleState = ({ target: { value, name } }) => {
+  handleState = ({ target: { value, name, type } }) => {
     
     if (name === 'name') {
       value = value.toUpperCase()
@@ -60,10 +61,18 @@ class Form extends Component {
             <input id="city" type="text" name="city" maxLength="28" value={ city } onChange={ this.handleState } onBlur={ this.cityValid } required />
           </label>
           <label htmlFor="states"> Estado
-            <select name="states" id="states" onChange={ this.handleState }>
+            <select name="states" id="states" onChange={ this.handleState } required>
               <option value="">Selecione</option>
               { states.map((state, index) => <option key={ index }>{ state }</option> ) }
             </select>
+          </label>
+          <label htmlFor="house">
+            <input id="house" type="radio" name="addressType" value="house" onChange={ this.handleState } />
+            Casa
+          </label>
+          <label htmlFor="ap">
+            <input id="ap" type="radio" name="addressType" value="apartment" onChange={ this.handleState } />
+            Apartamento
           </label>
         </fieldset>
       </form>
