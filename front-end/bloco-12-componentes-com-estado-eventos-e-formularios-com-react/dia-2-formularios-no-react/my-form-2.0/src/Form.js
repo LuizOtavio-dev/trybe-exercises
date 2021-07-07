@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+const states = ['Rio de Janeiro', 'Minas Gerais', 'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
+
 class Form extends Component {
   constructor() {
     super();
@@ -8,7 +10,8 @@ class Form extends Component {
       email: '',
       cpf: '',
       address: '',
-      city: ''
+      city: '',
+      states: ''
     }
   }
 
@@ -38,7 +41,7 @@ class Form extends Component {
   render() {
     const { name, address, city } = this.state;
     return (
-      <>
+      <form>
         <fieldset>
           <label htmlFor="name"> Nome
             <input id="name" type="text" name="name" maxLength="40" value={ name } onChange={ this.handleState } required />
@@ -56,8 +59,14 @@ class Form extends Component {
           <label htmlFor="city"> Cidade
             <input id="city" type="text" name="city" maxLength="28" value={ city } onChange={ this.handleState } onBlur={ this.cityValid } required />
           </label>
-      </fieldset>
-      </>
+          <label htmlFor="states"> Estado
+            <select name="states" id="states" onChange={ this.handleState }>
+              <option value="">Selecione</option>
+              { states.map((state, index) => <option key={ index }>{ state }</option> ) }
+            </select>
+          </label>
+        </fieldset>
+      </form>
     )
   }
 }
